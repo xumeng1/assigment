@@ -4,7 +4,7 @@ public class circle
    public static void main(String[] args)
   {  public static void compute(double area)
      { double r;
-        System.out.println("Please enter the radius of the circle£º")£»
+        System.out.println("Please enter the radius of the circle £º");
         Scanner input=new Scanner(System.in);
         r=input.nextDouble();
       if(r>=0)
@@ -16,7 +16,7 @@ public class circle
         area=0;
       }
      
-       System.out.println("The area of a circle is£º"+area);
+       System.out.println("The area of a circle is £º"+area);
     }
   }
 
