@@ -12,17 +12,13 @@ public class YearDays {
 	}
          public static int  GetDays(int year)
          {  
-    	 try{
+    	
             if(year%4==0&&year%100!=0||year%400==0)
                days=366;
     	    else
     	     days=365; 
           
     	   } 
-        catch (Exception e)
-         {
-    	  System.out.println("你输入的不是有效年份！！！");
-         }
-    	  return days;
+     
        }
  } 
