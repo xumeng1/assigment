@@ -32,16 +32,16 @@ public class GuessData {
 public static void main(String[] args) {
 	Scanner input=new Scanner(System.in);
 	String s;
-	System.out.printf("ÇëÊäÈëÒ»¸ö100ÒÔÄÚµÄÕûÊı£º");
+	System.out.printf("è¯·è¾“å…¥ä¸€ä¸ª100ä»¥å†…çš„æ•´æ•°ï¼š");
 	Scanner data=new Scanner(System.in);
         String Data=data.next();
          while(isNumeric(Data)){
 	if(Integer.valueOf(Data)<0||Integer.valueOf(Data)>100){
-	   System.out.print("ÄúÊäÈëµÄÓĞÎó,ÇëÖØĞÂÊäÈë100ÒÔÄÚµÄÕûÊı£¡");
+	   System.out.print("æ‚¨è¾“å…¥çš„æœ‰è¯¯,è¯·é‡æ–°è¾“å…¥100ä»¥å†…çš„æ•´æ•°ï¼");
 	    Data=data.next();
 	   }
         int sum=GuessData.guess( Integer.valueOf(Data));
-      System.out.println(Data+"µÄ²éÕÒ´ÎÊıÎª£º"+sum); 
+      System.out.println(Data+"çš„æŸ¥æ‰¾æ¬¡æ•°ä¸ºï¼š"+sum); 
     break;
 		       
       }    
