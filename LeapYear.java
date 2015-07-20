@@ -18,15 +18,15 @@ public class Leap {
 	public static void main(String[] args) {
 
 		Scanner in = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸öÄê·İ£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå¹´ä»½ï¼š");
 		int year=in.nextInt();
 		if(Leap.isLeap(year))
 		{
-			System.out.println(year+"ÄêÊÇÈòÄê");
+			System.out.println(year+"å¹´æ˜¯é—°å¹´");
 		}
 		else
 		{
-			System.out.println(year+"Äê²»ÊÇÈòÄê");
+			System.out.println(year+"å¹´ä¸æ˜¯é—°å¹´");
 		}
 
 	}
