@@ -11,15 +11,15 @@ public class Test {
 		choose();
 	}
 
-	//ÓÃ»§Ñ¡Ôñ
+	//ç”¨æˆ·é€‰æ‹©
 	public static void choose() throws IOException{
 		System.out.println("what would you like? please choose:");
 		System.out.println("1.create a file   2.read the file   3.write the file    4.delete the file    5.exit !!!");
-		System.out.println("ÇëÊäÈë¶ÔÓ¦µÄÊı×Ö£º");
+		System.out.println("è¯·è¾“å…¥å¯¹åº”çš„æ•°å­—ï¼š");
 		Scanner in = new Scanner(System.in);
 		int x=in.nextInt();
 		if(x<1||x>5)
-			System.out.println("ÄúÊäÈëÓĞÎó£¬ÇëÖØĞÂÊäÈë!!!");
+			System.out.println("æ‚¨è¾“å…¥æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥!!!");
 		else{
 			switch(x){
 			case 1:  CreateTest(); break;
@@ -30,7 +30,7 @@ public class Test {
 			}
 		}
 	}
-	//´´½¨ÎÄ¼ş
+	//åˆ›å»ºæ–‡ä»¶
 	public static void CreateTest() throws IOException {
 		File file = new File("D:\\123.txt");
 		boolean is_succ = file.createNewFile();
@@ -43,7 +43,7 @@ public class Test {
 
 		choose();
 	} 
-	//¶ÁÈ¡ÎÄ¼ş
+	//è¯»å–æ–‡ä»¶
 	public static void ReadTest() throws IOException { 
 		File file = new File("D:\\123.txt");
 		InputStream is = new FileInputStream(file);
@@ -64,7 +64,7 @@ public class Test {
 		choose();
 	} 
 
-	//Ğ´ÎÄ¼ş
+	//å†™æ–‡ä»¶
 
 	public static void WriteTest() throws IOException {
 		File file = new File("D:\\123.txt");
@@ -80,7 +80,7 @@ public class Test {
 		System.out.println("content has been written to file");
 		choose();
 	}
-	//É¾³ıÎÄ¼ş
+	//åˆ é™¤æ–‡ä»¶
 	public static void DeleteTest()throws IOException{
 		File file = new File("D:\\123.txt");
 		boolean is_succ=file.delete();
