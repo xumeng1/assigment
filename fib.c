@@ -16,7 +16,7 @@ int main()
 int a,i;
 scanf("%d",&a);
  if(a<0)
- {printf("ÇëÖØÐÂÊäÈë\n");
+ {printf("Ã‡Ã«Ã–Ã˜ÃÃ‚ÃŠÃ¤ÃˆÃ«\n");
  }
  else
  {
