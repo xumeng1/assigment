@@ -30,7 +30,7 @@ public class TheAverage  {
 	}
 	public static void main(String[] args) {
 		ArrayList<Integer> scores=new ArrayList<Integer>();
-		System.out.println("ÇëÊäÈëÒ»×éÊı×Ö£¨³É¼¨£©,²¢ÓÃ¶ººÅ¸ô¿ª£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ç»„æ•°å­—ï¼ˆæˆç»©ï¼‰,å¹¶ç”¨é€—å·éš”å¼€ï¼š");
 		Scanner in = new Scanner(System.in);
 		String input = in.next();
 		String[] temp = input.split(",");
@@ -38,7 +38,7 @@ public class TheAverage  {
 		{
 			scores.add(Integer.parseInt(temp[i]));
 		}
-		System.out.println("Æ½¾ù³É¼¨Îª"+averageScore(scores));
+		System.out.println("å¹³å‡æˆç»©ä¸º"+averageScore(scores));
 	}
 
 }
