@@ -26,7 +26,6 @@ public class Student {
 	}
 	public void level_up(){
 		grade++;
-
 	}
 	public boolean  Passed_cet4(){
 		int i; 
@@ -34,14 +33,10 @@ public class Student {
 			if(cet4_scores[i]>=425){
 				return true;	
 			}
-
 		}
 		return false;
-
 	}
 	public void printInfo(){
-
 		System.out.println("姓名： "+getname()+"\n"+"年级：  "+getgrade()+"\n"+"专业：  "+getmajor()+"\n"+"四级通过情况：   "+Passed_cet4());
 	}
-
 }
