@@ -22,10 +22,6 @@ public class PostcodeMatch {
 		String regex = "[0-9]{6}";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher m = pattern.matcher(s);
-		if(m.find()){
-			return true;
-		}
-		else
-			return false;
+		return m.matches();
 	}
 }
