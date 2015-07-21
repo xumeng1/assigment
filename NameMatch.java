@@ -20,10 +20,6 @@ public class NameMatch {
 		String regex="[A-Z][a-z]+\\s[A-Z][a-z]*\\s[A-Z][a-z]+";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher m = pattern.matcher(s);
-		if(m.find()){
-			return true;
-		}
-		else
-			return false;
+		return m.matches();
 	}
 }
