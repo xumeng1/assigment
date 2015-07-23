@@ -1,7 +1,7 @@
 #include<stdio.h>
 main(){
 	int a[8],i,j;
-	printf("请输入八次英语四级成绩（没有八次的用0代替）：\n");
+	printf("请输入八次英语四级成绩（没有八次可用0代替）：\n");
 	for(i=0;i<8;i++){
 		scanf("%d",&a[i]);
 		if (a[i]>=425)
