@@ -2,8 +2,8 @@ package java3;
 public class CarShop {
 	int Money = 0;
 	public void sellCar( Car c) {
-		System.out.println("卖出的车"+c.Name+"\n");
-		System.out.println("车的价格"+c.Price+"\n");
+		System.out.println("脗么鲁枚碌脛鲁碌"+c.Name+"\n");
+		System.out.println("鲁碌碌脛录脹赂帽"+c.Price+"\n");
 		Money+=c.Price;
 
 	}
