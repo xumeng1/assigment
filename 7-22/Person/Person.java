@@ -13,9 +13,9 @@ public class Person {
 		return Legnum;
 	}	
 	public static void printInfo(){
-		System.out.println("ÊÖµÄ³¤¶È£º"+Handnum.getlength ()+"\n");
-		System.out.println("ÊÖµÄÖØÁ¿£º"+Handnum.getweight()+"\n");
-		System.out.println("ÍÈµÄ³¤¶È£º"+Legnum.getlength ()+"\n");
-		System.out.println("ÍÈµÄÖØÁ¿£º"+Legnum.getweight()+"\n");	
+		System.out.println("æ‰‹çš„é•¿åº¦ï¼š"+Handnum.getlength ()+"\n");
+		System.out.println("æ‰‹çš„é‡é‡ï¼š"+Handnum.getweight()+"\n");
+		System.out.println("è…¿çš„é•¿åº¦ï¼š"+Legnum.getlength ()+"\n");
+		System.out.println("è…¿çš„é‡é‡ï¼š"+Legnum.getweight()+"\n");	
 	}
 }
