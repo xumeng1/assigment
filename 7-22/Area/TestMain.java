@@ -1,6 +1,6 @@
 package  com;
 import java.util.Scanner; 
-import com. Shape;
+import com.Shape;
 public class TestMain {
 	/**
 	 * @param args
