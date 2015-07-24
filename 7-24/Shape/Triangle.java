@@ -1,21 +1,28 @@
 package text;
-
+import java.util.ArrayList;
 public class Triangle extends Shape {
-	
-	public Triangle(double Sidelength) {
-		super(Sidelength);
-		// TODO Auto-generated constructor stub
+	private double high;
+	private double Sidelength;
+	private double Area;
+	public Triangle(double high, double Sidelength) {
+		this. high= high;
+		this.Sidelength=Sidelength;
 	}
 	public double getSidelength(){
-		return this.getSidelength();
+		return Sidelength;
 	}
 	public double CalculateArea(){
-		Area=Math.cos(60)*Sidelength*Sidelength*1/2;
+		return high;
+	}
+	public double getArea(){
+		double Area=0;
+		Area=high*Sidelength*1/2;
 		System.out.println(Area);
 		return Area;
 	}
-	public void AllArea( Shape c) {
-		System.out.println("Èı½ÇĞÎµÄ±ß³¤Îª£º"+c.Sidelength+"\n");	
-		System.out.println("Èı½ÇĞÎµÄÃæ»ıÎª£º"+c.Area+"\n");	
+	public void AllArea( ArrayList<Shape> shapes) {
+		System.out.println("ä¸‰è§’å½¢çš„è¾¹é•¿ä¸ºï¼š"+Sidelength+"\n");
+		System.out.println("ä¸‰è§’å½¢çš„é«˜ä¸ºï¼š"+high+"\n");
+		System.out.println("ä¸‰è§’å½¢çš„é¢ç§¯ä¸ºï¼š"+Area+"\n");	
 	}
 }
