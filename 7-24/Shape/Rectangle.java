@@ -1,24 +1,26 @@
 package text;
-
+import java.util.ArrayList;
 public class Rectangle extends Shape{
-
+	private double longRectangle;
+	private double wideRectangle;
+	private double Area;
 	public Rectangle(double longRectangle, double wideRectangle) {
-		super(longRectangle, wideRectangle);
-		// TODO Auto-generated constructor stub
+		this.longRectangle=longRectangle;
+		this.wideRectangle=wideRectangle;
 	}
 	public double getlongRectangle(){
-		return this.getlongRectangle();
+		return longRectangle;
 	}
 	public double getwideRectangle(){
-		return this.getwideRectangle();
+		return wideRectangle;
 	}
 	public double CalculateArea(){
 		Area=longRectangle*wideRectangle;
 		return Area;
 	}
-	public void AllArea( Shape c) {
-		System.out.println("³¤·½ĞÎ³¤Îª£º"+c.longRectangle+"\n");	
-		System.out.println("³¤·½ĞÎ¿íÎª£º"+c.Sidelength+"\n");	
-		System.out.println("³¤·½ĞÎÃæ»ıÎª£º"+c.Area+"\n");	
+	public void AllArea( ArrayList<Shape> shapes) {
+		System.out.println("é•¿æ–¹å½¢é•¿ä¸ºï¼š"+longRectangle+"\n");	
+		System.out.println("é•¿æ–¹å½¢å®½ä¸ºï¼š"+wideRectangle+"\n");	
+		System.out.println("é•¿æ–¹å½¢é¢ç§¯ä¸ºï¼š"+Area+"\n");	
 	}
 }
