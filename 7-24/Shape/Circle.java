@@ -1,21 +1,20 @@
 package text;
-
+import java.util.ArrayList;
 public class Circle extends Shape{
-	
-	public Circle(double Sidelength) {
-		super(Sidelength);
-		// TODO Auto-generated constructor stub
+	private double r;
+	private double Area;
+	public Circle(double r) {
+		this.r=r;
 	}
-	public double getSidelength(){
-		return this.getSidelength();
+	public double getr(){
+		return r;
 	}
 	public double CalculateArea(){
-	
-		this.Area=Math.PI*this.Sidelength*this.Sidelength;
+		this.Area=Math.PI*r*r;
 		return Area;
 	}
-	public void AllArea( Shape c) {
-		System.out.println("圆的半径为："+c.Sidelength+"\n");	
-		System.out.println("圆的面积为："+c.Area+"\n");	
+	public void AllArea(ArrayList<Shape> shapes) {
+		System.out.println("鍦嗙殑鍗婂緞涓猴細"+r+"\n");	
+		System.out.println("鍦嗙殑闈㈢Н涓猴細"+Area+"\n");	
 	}
 }
