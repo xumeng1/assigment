@@ -1,21 +1,21 @@
 package text;
-
+import java.util.ArrayList;
 public class Squre extends Shape {
-	
-	public Squre(double Sidelength) {
-		super(Sidelength);
-		// TODO Auto-generated constructor stub
+	private double Sidelength;
+	private double Area;
+	public Squre(double Sidelength){
+		this.Sidelength=Sidelength;
 	}
 	public double getSidelength(){
-		return this.getSidelength();
-	}
+		return Sidelength;
+	}	
 	public double CalculateArea(){
 		Area=Sidelength*Sidelength;
 		System.out.println(Area);
 		return Area;
 	}
-	public void AllArea( Shape c) {
-		System.out.println("Õı·½ĞÎ±ß³¤Îª£º"+c.Sidelength+"\n");	
-		System.out.println("Õı·½ĞÎµÄÃæ»ıÎª£º"+c.Area+"\n");	
+	public void AllArea(ArrayList<Shape> shapes) {
+		System.out.println("æ­£æ–¹å½¢è¾¹é•¿ä¸ºï¼š"+Sidelength+"\n");	
+		System.out.println("æ­£æ–¹å½¢çš„é¢ç§¯ä¸ºï¼š"+Area+"\n");	
 	}
 }
