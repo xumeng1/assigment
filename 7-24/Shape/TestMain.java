@@ -1,6 +1,5 @@
 package text;
 import text.Shape;
-import text.All;
 import java.util.ArrayList;
 public class TestMain {
 	/**
@@ -14,10 +13,10 @@ public class TestMain {
 		shapes.add(new Triangle(4,5));
 		System.out.println("Total Area:" + getTotalArea(shapes));
 	}
-	public static double getTotalArea(ArrayList shapes) {
+	public static double getTotalArea(ArrayList<Shape> shapes) {
 		double total_area = 0;
 		for (int i = 0; i < shapes.size(); i++) {
-			total_area += ((Shape) shapes.get(i)).CalculateArea();
+			total_area += (shapes.get(i)).calculateArea();
 		}
 		return total_area;
 	}
