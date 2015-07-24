@@ -11,18 +11,11 @@ public class Triangle extends Shape {
 	public double getSidelength(){
 		return Sidelength;
 	}
-	public double CalculateArea(){
+	public double gethigh(){
 		return high;
 	}
-	public double getArea(){
-		double Area=0;
-		Area=high*Sidelength*1/2;
-		System.out.println(Area);
+	public double calculateArea(){
+		Area=high*Sidelength*0.5;
 		return Area;
-	}
-	public void AllArea( ArrayList<Shape> shapes) {
-		System.out.println("三角形的边长为："+Sidelength+"\n");
-		System.out.println("三角形的高为："+high+"\n");
-		System.out.println("三角形的面积为："+Area+"\n");	
 	}
 }
