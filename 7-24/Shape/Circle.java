@@ -9,12 +9,8 @@ public class Circle extends Shape{
 	public double getr(){
 		return r;
 	}
-	public double CalculateArea(){
+	public double calculateArea(){
 		this.Area=Math.PI*r*r;
 		return Area;
-	}
-	public void AllArea(ArrayList<Shape> shapes) {
-		System.out.println("圆的半径为："+r+"\n");	
-		System.out.println("圆的面积为："+Area+"\n");	
 	}
 }
