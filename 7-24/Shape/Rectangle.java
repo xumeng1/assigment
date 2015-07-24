@@ -14,13 +14,8 @@ public class Rectangle extends Shape{
 	public double getwideRectangle(){
 		return wideRectangle;
 	}
-	public double CalculateArea(){
+	public double calculateArea(){
 		Area=longRectangle*wideRectangle;
 		return Area;
-	}
-	public void AllArea( ArrayList<Shape> shapes) {
-		System.out.println("长方形长为："+longRectangle+"\n");	
-		System.out.println("长方形宽为："+wideRectangle+"\n");	
-		System.out.println("长方形面积为："+Area+"\n");	
 	}
 }
