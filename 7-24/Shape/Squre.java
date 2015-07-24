@@ -9,13 +9,8 @@ public class Squre extends Shape {
 	public double getSidelength(){
 		return Sidelength;
 	}	
-	public double CalculateArea(){
+	public double calculateArea(){
 		Area=Sidelength*Sidelength;
-		System.out.println(Area);
 		return Area;
-	}
-	public void AllArea(ArrayList<Shape> shapes) {
-		System.out.println("正方形边长为："+Sidelength+"\n");	
-		System.out.println("正方形的面积为："+Area+"\n");	
 	}
 }
